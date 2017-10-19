@@ -584,7 +584,7 @@ def networkx_to_metis(G):
             except TypeError:
                 raise TypeError("Node sizes must be integers")
 
-        for j, attr in H.edge[i].items():
+        for j, attr in H.adj[i].items():
             adjncy[e] = j
             if edgew:
                 try:
